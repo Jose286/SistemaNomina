@@ -1,0 +1,15 @@
+﻿<Window x:Class="Nomina.w_Anticipos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nomina"
+        mc:Ignorable="d"
+        Title="w_Anticipos" Height="300" Width="600"  WindowStartupLocation="CenterScreen">
+        
+    <Canvas>
+        <GroupBox Header="Anticipos Solicitados" Canvas.Left="10" Canvas.Top="10" Width="572" Height="219">
+            <DataGrid Name="dgAnticipos" Loaded="DgAnticipos_Loaded" Margin="0,0,0,-3" Height="170" VerticalAlignment="Top" ></DataGrid>
+        </GroupBox>
+    </Canvas>
+</Window>

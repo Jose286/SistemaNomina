@@ -1,0 +1,151 @@
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\bin\Debug\Nomina.exe.config
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\bin\Debug\Nomina.exe
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\bin\Debug\Nomina.pdb
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\bin\Debug\ControlzEx.dll
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\bin\Debug\EntityFramework.dll
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\bin\Debug\MaterialDesignColors.dll
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\bin\Debug\ControlzEx.pdb
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\bin\Debug\EntityFramework.xml
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\MainWindow.g.cs
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\Menu.g.cs
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\w_Anticipos.g.cs
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\w_Conceptos.g.cs
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\w_Empleados.g.cs
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\w_Permisos.g.cs
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\App.g.cs
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\Nomina_Content.g.cs
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\Nomina_MarkupCompile.cache
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\Nomina_MarkupCompile.lref
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\App.baml
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\MainWindow.baml
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\Menu.baml
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\w_Anticipos.baml
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\w_Conceptos.baml
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\w_Empleados.baml
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\w_Permisos.baml
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\Nomina.g.resources
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\Nomina.Properties.Resources.resources
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\Nomina.csproj.GenerateResource.Cache
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\Nomina.exe
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\Nomina.pdb
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\w_Login.g.cs
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\w_Turno.g.cs
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\w_Login.baml
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\w_Turno.baml
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\w_Vacaciones.g.cs
+C:\Users\alumno-205\Documents\Visual Studio 2015\Nomina\Nomina\obj\Debug\w_Vacaciones.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\MainWindow.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\Menu.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\w_Anticipos.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\w_Conceptos.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\w_Empleados.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\w_Login.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\w_Permisos.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\w_Turno.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\w_Vacaciones.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\App.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\Nomina_Content.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\Nomina_MarkupCompile.cache
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\Nomina_MarkupCompile.lref
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\App.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\MainWindow.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\Menu.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\w_Anticipos.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\w_Conceptos.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\w_Empleados.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\w_Login.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\w_Permisos.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\w_Turno.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\w_Vacaciones.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\Nomina.g.resources
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\Proyecto C#\Nomina\Nomina\Nomina\obj\Debug\Nomina.pdb
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\Nomina.exe.config
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\Nomina.exe
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\Nomina.pdb
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\ControlzEx.dll
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\EntityFramework.dll
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\EntityFramework.SqlServer.dll
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\MaterialDesignColors.dll
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\System.Windows.Interactivity.dll
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\ControlzEx.pdb
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\EntityFramework.xml
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\EntityFramework.SqlServer.xml
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Menu.g.cs
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Anticipos.g.cs
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Conceptos.g.cs
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Empleados.g.cs
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Login.g.cs
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Permisos.g.cs
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Turno.g.cs
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Vacaciones.g.cs
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\App.g.cs
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina_Content.g.cs
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina_MarkupCompile.cache
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina_MarkupCompile.lref
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\App.baml
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Menu.baml
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Anticipos.baml
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Conceptos.baml
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Empleados.baml
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Login.baml
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Permisos.baml
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Turno.baml
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Vacaciones.baml
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina.g.resources
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina.Properties.Resources.resources
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina.csproj.GenerateResource.Cache
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina.exe
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina.pdb
+E:\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina.csprojResolveAssemblyReference.cache
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Menu.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Anticipos.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Conceptos.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Empleados.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Login.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Permisos.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Turno.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Vacaciones.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\App.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina_Content.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina_MarkupCompile.cache
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina_MarkupCompile.lref
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\App.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Menu.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Anticipos.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Conceptos.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Empleados.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Login.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Permisos.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Turno.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\w_Vacaciones.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina.g.resources
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina.pdb
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\Nomina.exe.config
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\Nomina.exe
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\Nomina.pdb
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\ControlzEx.dll
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\EntityFramework.dll
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\MaterialDesignColors.dll
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\ControlzEx.pdb
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\EntityFramework.xml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina.csprojAssemblyReference.cache
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina.Properties.Resources.resources
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina.csproj.GenerateResource.cache
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina.csproj.CoreCompileInputs.cache
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina.csproj.CopyComplete
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\2019\C# AVANZADO\PROYECTO 2DA VERSION\Nomina\Nomina\Nomina\obj\Debug\Nomina.exe

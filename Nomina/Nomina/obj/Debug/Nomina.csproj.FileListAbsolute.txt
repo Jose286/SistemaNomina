@@ -193,3 +193,6 @@ C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\N
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\Nomina.pdb
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Empleado_Salario_Aumento.g.cs
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Empleado_Salario_Aumento.baml
+C:\Users\Carlos\Source\Repos\SistemaNomina4\Nomina\Nomina\bin\Debug\Nomina.exe.config
+C:\Users\Carlos\Source\Repos\SistemaNomina4\Nomina\Nomina\obj\Debug\Nomina.exe
+C:\Users\Carlos\Source\Repos\SistemaNomina4\Nomina\Nomina\obj\Debug\Nomina.pdb

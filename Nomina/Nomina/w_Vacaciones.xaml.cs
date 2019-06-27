@@ -45,5 +45,44 @@ namespace Nomina
         {
             Visualizar();
         }
+
+        private void BtnAprobar_Click(object sender, RoutedEventArgs e)
+        {
+            if (dgVacaciones.SelectedItem != null)
+            {
+                Vacaciones v = (Vacaciones)dgVacaciones.SelectedItem;
+                if (v.Estado == "Pendiente")
+                {
+                    v.Estado = "Aprobado";
+                    MessageBox.Show("Se Aprobo las vacaciones");
+                }
+                else
+                    MessageBox.Show("Las vacaciones ya estan procesadas");
+                datos.SaveChanges();
+                Visualizar();
+            }
+            else
+                MessageBox.Show("Debe solicionar unas vacaciones para poder  procesarlo!");
+        }
+
+        private void BtnRechazar_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (dgVacaciones.SelectedItem != null)
+            {
+                Vacaciones v = (Vacaciones)dgVacaciones.SelectedItem;
+                if (v.Estado == "Pendiente")
+                {
+                    v.Estado = "Rechazado";
+                    MessageBox.Show("Se Rechazo las vacaciones");
+                }
+                else
+                    MessageBox.Show("Las vacaciones ya estan procesadas");
+                datos.SaveChanges();
+                Visualizar();
+            }
+            else
+                MessageBox.Show("Debe solicionar unas vacaciones para poder  procesarlo!");
+        }
     }
 }

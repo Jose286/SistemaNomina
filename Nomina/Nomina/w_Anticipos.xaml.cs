@@ -26,7 +26,7 @@ namespace Nomina
             datos = new NominaEntities();
         }
 
-        private void CargarDatosGrilla()
+         private void CargarDatosGrilla()
         {
             try
             {
@@ -41,6 +41,44 @@ namespace Nomina
         private void DgAnticipos_Loaded(object sender, RoutedEventArgs e)
         {
             CargarDatosGrilla();
+        }
+
+        private void BtnAprobar_Click(object sender, RoutedEventArgs e)
+        {
+            if (dgAnticipos.SelectedItem != null)
+            {
+                Anticipo a = (Anticipo)dgAnticipos.SelectedItem;
+                if (a.Estado == "Pendiente")
+                {
+                    a.Estado = "Aprobado";
+                    MessageBox.Show("Se Aprobo el Anticipo");
+                }
+                else
+                    MessageBox.Show("El Anticipo ya esta procesado");
+                datos.SaveChanges();
+                CargarDatosGrilla();
+            }
+            else
+                MessageBox.Show("Debe seleccionar un Anticipo para procesarlo!");
+        }
+
+        private void BtnRechazar_Click(object sender, RoutedEventArgs e)
+        {
+            if (dgAnticipos.SelectedItem != null)
+            {
+                Anticipo a = (Anticipo)dgAnticipos.SelectedItem;
+                if (a.Estado == "Pendiente")
+                {
+                    a.Estado = "Rechazado";
+                    MessageBox.Show("Se Rechazo el Anticipo");
+                }
+                else
+                    MessageBox.Show("El Anticipo ya esta procesado");
+                datos.SaveChanges();
+                CargarDatosGrilla();
+            }
+            else
+                MessageBox.Show("Debe seleccionar un Anticipo para procesarlo!");
         }
 
     }

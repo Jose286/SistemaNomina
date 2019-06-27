@@ -8,8 +8,10 @@
         Title="w_Anticipos" Height="300" Width="600"  WindowStartupLocation="CenterScreen">
         
     <Canvas>
-        <GroupBox Header="Anticipos Solicitados" Canvas.Left="10" Canvas.Top="10" Width="572" Height="219">
-            <DataGrid Name="dgAnticipos" Loaded="DgAnticipos_Loaded" Margin="0,0,0,-3" Height="170" VerticalAlignment="Top" ></DataGrid>
-        </GroupBox>
+      <GroupBox Header="Anticipos Solicitados" Canvas.Left="10" Canvas.Top="10" Width="572" Height="219">
+        <DataGrid Name="dgAnticipos" Loaded="DgAnticipos_Loaded" Margin="0,0,0,-3" Height="170" VerticalAlignment="Top" ></DataGrid>
+      </GroupBox>
+      <Button Name="BtnAprobar" Content="Aprobar" Click="BtnAprobar_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Canvas.Left="185" Canvas.Top="234"/>
+      <Button Name="BtnRechazar" Content="Rechazar" Click="BtnRechazar_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Canvas.Left="329" Canvas.Top="234"/>
     </Canvas>
 </Window>

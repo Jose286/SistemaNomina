@@ -10,5 +10,8 @@
         <GroupBox Header=" Permisos solicitados:" Height="227" Width="572" Canvas.Left="10">
             <DataGrid x:Name="dgPermisos" Margin="0,0,-10,-4" Loaded="dgPermisos_Loaded"></DataGrid>
         </GroupBox>
+        <Button x:Name="btnAprobar" Content="Aprobar" Click="btnAprobar_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="86" Canvas.Left="185" Canvas.Top="227"/>
+        <Button x:Name="btnRechazar" Content="Rechazar" Click="btnRechazar_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="93" Canvas.Left="289" Canvas.Top="227"/>
+
     </Canvas>
 </Window>

@@ -43,5 +43,25 @@ namespace Nomina
         {
             CargarDatosGrilla();
         }
+
+        private void BtnActualizar_Click(object sender, RoutedEventArgs e)
+        {
+            if (dgAumentoSalarial.SelectedItem != null)
+            {
+
+                Empleado em = (Empleado)dgAumentoSalarial.SelectedItem;
+                Empleado_Salario_Historico h = (Empleado_Salario_Historico)dgAumentoSalarial.SelectedItem;
+
+                //Se carga los datos historicos, el empleado, el salario anterior y el nuevo con la fecha
+                h.Empleado_Id = em.Id_Empleado;
+                h.Salario_Basico_Anterior = em.Salario_Basico;
+                h.Salario_Basico_Anterior = int.Parse(txtNuevoSalario.Text);
+                h.Fecha_Hora = DateTime.Today;
+
+                //Se actualiza el salario nuevo del empleado despues de haber guardado el dato historico                
+                em.Salario_Basico = int.Parse(txtNuevoSalario.Text);
+
+            }
+        }
     }
 }

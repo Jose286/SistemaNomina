@@ -167,6 +167,7 @@ C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\N
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Anticipos.g.cs
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Conceptos.g.cs
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Empleados.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Empleado_Salario_Aumento.g.cs
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Login.g.cs
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Permisos.g.cs
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Turno.g.cs
@@ -180,6 +181,7 @@ C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\N
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Anticipos.baml
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Conceptos.baml
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Empleados.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Empleado_Salario_Aumento.baml
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Login.baml
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Permisos.baml
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Turno.baml
@@ -191,5 +193,3 @@ C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\N
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\Nomina.csproj.CopyComplete
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\Nomina.exe
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\Nomina.pdb
-C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Empleado_Salario_Aumento.g.cs
-C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Empleado_Salario_Aumento.baml

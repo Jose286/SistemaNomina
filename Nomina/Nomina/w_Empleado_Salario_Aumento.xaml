@@ -7,10 +7,17 @@
         mc:Ignorable="d"
         Title="w_Empleado_Salario_Aumento" Height="450" Width="800">
     <Canvas>
-        <GroupBox Header="Aumento Salarial" Height="350" Width="772" Canvas.Left="10" Canvas.Top="10">
-            <DataGrid Name="dgAumentoSalarial" Loaded="DgAumentoSalarial_Loaded">
-                
-            </DataGrid>
+        <GroupBox Header="Aumento Salarial" Height="280" Width="772" Canvas.Left="10" Canvas.Top="10">
+            <DataGrid Name="dgAumentoSalarial" Loaded="DgAumentoSalarial_Loaded" />
+
+
         </GroupBox>
+        
+            <Label x:Name="label" Content="Nuevo Salario:" Canvas.Left="30" Canvas.Top="314" Height="32" Width="97" Margin="0,4,0,43"/>
+            <TextBox x:Name="txtNuevoSalario" Height="32" Canvas.Left="147" TextWrapping="Wrap" Canvas.Top="314" Width="120"/>
+        <Button x:Name="btnActualizar" Content="Actualizar Salario" Click="BtnActualizar_Click" Canvas.Left="500" Canvas.Top="350" Width="162"/>
+
+
+
     </Canvas>
 </Window>

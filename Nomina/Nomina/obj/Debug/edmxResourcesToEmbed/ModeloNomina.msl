@@ -27,6 +27,7 @@
     <EntitySetMapping Name="Empleado">
       <EntityTypeMapping TypeName="NominaModel.Empleado">
         <MappingFragment StoreEntitySet="Empleado">
+          <ScalarProperty Name="Turno_Id" ColumnName="Turno_Id" />
           <ScalarProperty Name="Id_Empleado" ColumnName="Id_Empleado" />
           <ScalarProperty Name="Nombres" ColumnName="Nombres" />
           <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
@@ -86,6 +87,18 @@
           <ScalarProperty Name="Estado" ColumnName="Estado" />
           <ScalarProperty Name="Fecha_Definicion" ColumnName="Fecha_Definicion" />
           <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empleado_Salario_Historico">
+      <EntityTypeMapping TypeName="NominaModel.Empleado_Salario_Historico">
+        <MappingFragment StoreEntitySet="Empleado_Salario_Historico">
+          <ScalarProperty Name="Usuario_Id" ColumnName="Usuario_Id" />
+          <ScalarProperty Name="Fecha_Hora" ColumnName="Fecha_Hora" />
+          <ScalarProperty Name="Salario_Basico_Nuevo" ColumnName="Salario_Basico_Nuevo" />
+          <ScalarProperty Name="Salario_Basico_Anterior" ColumnName="Salario_Basico_Anterior" />
+          <ScalarProperty Name="Empleado_Id" ColumnName="Empleado_Id" />
+          <ScalarProperty Name="Id_Salario_Historico" ColumnName="Id_Salario_Historico" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -44,7 +44,7 @@
                 <TextBox Grid.Column="1" Grid.Row="5" Name="txtNroTelefono" Height="35" Width="160"></TextBox>
                 <DatePicker Grid.Column="1" Grid.Row="6" Name="dpFechaNacimiento" Height="35" Width="160"></DatePicker>
                 <DatePicker Grid.Column="1" Grid.Row="7" Name="dpFechaIncorporacion" Height="35" Width="160"></DatePicker>
-                <TextBox Grid.Column="1" Grid.Row="8" Name="txtSalarioBasico" Height="35" Width="160"></TextBox>
+                <TextBox Grid.Column="1" Grid.Row="8" Name="txtSalarioBasico" IsReadOnly="True" Text=" 2112562" Height="35" Width="160"></TextBox>
 
                 <Button Name="btnImagen" Grid.Column="2" Grid.Row="6" Click="BtnImagen_Click" Content="Seleccionar" Height="28" Margin="93,5,77,3"/>
 

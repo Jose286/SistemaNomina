@@ -35,6 +35,18 @@
     <Property Name="Fecha_Incorporacion" Type="date" />
     <Property Name="Imagen_Perfil" Type="varchar" MaxLength="1000" />
     <Property Name="Salario_Basico" Type="int" Nullable="false" />
+    <Property Name="Turno_Id" Type="int" />
+  </EntityType>
+  <EntityType Name="Empleado_Salario_Historico">
+    <Key>
+      <PropertyRef Name="Id_Salario_Historico" />
+    </Key>
+    <Property Name="Id_Salario_Historico" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Empleado_Id" Type="int" Nullable="false" />
+    <Property Name="Salario_Basico_Anterior" Type="int" Nullable="false" />
+    <Property Name="Salario_Basico_Nuevo" Type="int" Nullable="false" />
+    <Property Name="Fecha_Hora" Type="datetime" Nullable="false" />
+    <Property Name="Usuario_Id" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Permisos">
     <Key>
@@ -68,17 +80,9 @@
     <Property Name="Password" Type="varchar" MaxLength="1000" Nullable="false" />
     <Property Name="Empleado_Id" Type="int" />
   </EntityType>
-  <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'Nomina.dbo.Vacaciones' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
   <EntityType Name="Vacaciones">
     <Key>
       <PropertyRef Name="Id_Vacaciones" />
-      <PropertyRef Name="Empleado_Id" />
-      <PropertyRef Name="Fecha_Desde" />
-      <PropertyRef Name="Fecha_Hasta" />
-      <PropertyRef Name="Fecha_Solicitud" />
-      <PropertyRef Name="Estado" />
-      <PropertyRef Name="Fecha_Definicion" />
     </Key>
     <Property Name="Id_Vacaciones" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Empleado_Id" Type="int" Nullable="false" />
@@ -89,6 +93,42 @@ advertencia 6002: La tabla o vista 'Nomina.dbo.Vacaciones' no tiene definida nin
     <Property Name="Fecha_Definicion" Type="date" Nullable="false" />
     <Property Name="Observaciones" Type="varchar" MaxLength="1000" />
   </EntityType>
+  <Association Name="FK__Empleado___Emple__2E1BDC42">
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
+    <End Role="Empleado_Salario_Historico" Type="Self.Empleado_Salario_Historico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Id_Empleado" />
+      </Principal>
+      <Dependent Role="Empleado_Salario_Historico">
+        <PropertyRef Name="Empleado_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleado___Usuar__2F10007B">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Empleado_Salario_Historico" Type="Self.Empleado_Salario_Historico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id_Usuario" />
+      </Principal>
+      <Dependent Role="Empleado_Salario_Historico">
+        <PropertyRef Name="Usuario_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleado__Turno___21B6055D">
+    <End Role="Turno" Type="Self.Turno" Multiplicity="0..1" />
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Turno">
+        <PropertyRef Name="Id_Turno" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="Turno_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Anticipo_Empleado">
     <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
     <End Role="Anticipo" Type="Self.Anticipo" Multiplicity="*" />
@@ -141,21 +181,23 @@ advertencia 6002: La tabla o vista 'Nomina.dbo.Vacaciones' no tiene definida nin
     <EntitySet Name="Anticipo" EntityType="Self.Anticipo" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Concepto" EntityType="Self.Concepto" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Empleado" EntityType="Self.Empleado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Empleado_Salario_Historico" EntityType="Self.Empleado_Salario_Historico" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Permisos" EntityType="Self.Permisos" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Turno" EntityType="Self.Turno" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Vacaciones" EntityType="Self.Vacaciones" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [Vacaciones].[Id_Vacaciones] AS [Id_Vacaciones], 
-    [Vacaciones].[Empleado_Id] AS [Empleado_Id], 
-    [Vacaciones].[Fecha_Desde] AS [Fecha_Desde], 
-    [Vacaciones].[Fecha_Hasta] AS [Fecha_Hasta], 
-    [Vacaciones].[Fecha_Solicitud] AS [Fecha_Solicitud], 
-    [Vacaciones].[Estado] AS [Estado], 
-    [Vacaciones].[Fecha_Definicion] AS [Fecha_Definicion], 
-    [Vacaciones].[Observaciones] AS [Observaciones]
-    FROM [dbo].[Vacaciones] AS [Vacaciones]</DefiningQuery>
-    </EntitySet>
+    <EntitySet Name="Vacaciones" EntityType="Self.Vacaciones" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Empleado___Emple__2E1BDC42" Association="Self.FK__Empleado___Emple__2E1BDC42">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="Empleado_Salario_Historico" EntitySet="Empleado_Salario_Historico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleado___Usuar__2F10007B" Association="Self.FK__Empleado___Usuar__2F10007B">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Empleado_Salario_Historico" EntitySet="Empleado_Salario_Historico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleado__Turno___21B6055D" Association="Self.FK__Empleado__Turno___21B6055D">
+      <End Role="Turno" EntitySet="Turno" />
+      <End Role="Empleado" EntitySet="Empleado" />
+    </AssociationSet>
     <AssociationSet Name="FK_Anticipo_Empleado" Association="Self.FK_Anticipo_Empleado">
       <End Role="Empleado" EntitySet="Empleado" />
       <End Role="Anticipo" EntitySet="Anticipo" />

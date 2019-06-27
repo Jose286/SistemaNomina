@@ -40,6 +40,9 @@
     <NavigationProperty Name="Usuario" Relationship="Self.FK_Empleado_Usuario" FromRole="Empleado" ToRole="Usuario" />
     <NavigationProperty Name="Permisos" Relationship="Self.FK_Permisos_Empleado" FromRole="Empleado" ToRole="Permisos" />
     <NavigationProperty Name="Vacaciones" Relationship="Self.FK_Vacaciones_Empleado" FromRole="Empleado" ToRole="Vacaciones" />
+    <Property Name="Turno_Id" Type="Int32" />
+    <NavigationProperty Name="Empleado_Salario_Historico" Relationship="NominaModel.FK__Empleado___Emple__2E1BDC42" FromRole="Empleado" ToRole="Empleado_Salario_Historico" />
+    <NavigationProperty Name="Turno" Relationship="NominaModel.FK__Empleado__Turno___21B6055D" FromRole="Empleado" ToRole="Turno" />
   </EntityType>
   <EntityType Name="Permisos">
     <Key>
@@ -64,6 +67,7 @@
     <Property Name="Hora_Entrada" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Hora_Salida" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Observaciones" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Empleado" Relationship="NominaModel.FK__Empleado__Turno___21B6055D" FromRole="Turno" ToRole="Empleado" />
   </EntityType>
   <EntityType Name="Usuario">
     <Key>
@@ -74,6 +78,7 @@
     <Property Name="Password" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Empleado_Id" Type="Int32" />
     <NavigationProperty Name="Empleado" Relationship="Self.FK_Empleado_Usuario" FromRole="Usuario" ToRole="Empleado" />
+    <NavigationProperty Name="Empleado_Salario_Historico" Relationship="NominaModel.FK__Empleado___Usuar__2F10007B" FromRole="Usuario" ToRole="Empleado_Salario_Historico" />
   </EntityType>
   <EntityType Name="Vacaciones">
     <Key>
@@ -167,5 +172,67 @@
       <End Role="Empleado" EntitySet="Empleado" />
       <End Role="Vacaciones" EntitySet="Vacaciones" />
     </AssociationSet>
+    <EntitySet Name="Empleado_Salario_Historico" EntityType="NominaModel.Empleado_Salario_Historico" />
+    <AssociationSet Name="FK__Empleado___Emple__2E1BDC42" Association="NominaModel.FK__Empleado___Emple__2E1BDC42">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="Empleado_Salario_Historico" EntitySet="Empleado_Salario_Historico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleado__Turno___21B6055D" Association="NominaModel.FK__Empleado__Turno___21B6055D">
+      <End Role="Turno" EntitySet="Turno" />
+      <End Role="Empleado" EntitySet="Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleado___Usuar__2F10007B" Association="NominaModel.FK__Empleado___Usuar__2F10007B">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Empleado_Salario_Historico" EntitySet="Empleado_Salario_Historico" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="Empleado_Salario_Historico">
+    <Key>
+      <PropertyRef Name="Id_Salario_Historico" />
+    </Key>
+    <Property Name="Id_Salario_Historico" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Empleado_Id" Type="Int32" Nullable="false" />
+    <Property Name="Salario_Basico_Anterior" Type="Int32" Nullable="false" />
+    <Property Name="Salario_Basico_Nuevo" Type="Int32" Nullable="false" />
+    <Property Name="Fecha_Hora" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usuario_Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Empleado" Relationship="NominaModel.FK__Empleado___Emple__2E1BDC42" FromRole="Empleado_Salario_Historico" ToRole="Empleado" />
+    <NavigationProperty Name="Usuario" Relationship="NominaModel.FK__Empleado___Usuar__2F10007B" FromRole="Empleado_Salario_Historico" ToRole="Usuario" />
+  </EntityType>
+  <Association Name="FK__Empleado___Emple__2E1BDC42">
+    <End Type="NominaModel.Empleado" Role="Empleado" Multiplicity="1" />
+    <End Type="NominaModel.Empleado_Salario_Historico" Role="Empleado_Salario_Historico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Id_Empleado" />
+      </Principal>
+      <Dependent Role="Empleado_Salario_Historico">
+        <PropertyRef Name="Empleado_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleado__Turno___21B6055D">
+    <End Type="NominaModel.Turno" Role="Turno" Multiplicity="0..1" />
+    <End Type="NominaModel.Empleado" Role="Empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Turno">
+        <PropertyRef Name="Id_Turno" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="Turno_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleado___Usuar__2F10007B">
+    <End Type="NominaModel.Usuario" Role="Usuario" Multiplicity="1" />
+    <End Type="NominaModel.Empleado_Salario_Historico" Role="Empleado_Salario_Historico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id_Usuario" />
+      </Principal>
+      <Dependent Role="Empleado_Salario_Historico">
+        <PropertyRef Name="Usuario_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

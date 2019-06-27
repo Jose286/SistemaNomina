@@ -62,5 +62,12 @@ namespace Nomina
             w_Vacaciones ventanaVacaciones = new w_Vacaciones();
             ventanaVacaciones.ShowDialog();
         }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            w_Empleado_Salario_Aumento ventanaAumentoSalarial = new w_Empleado_Salario_Aumento();
+            ventanaAumentoSalarial.ShowDialog();
+
+        }
     }
 }

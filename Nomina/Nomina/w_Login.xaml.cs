@@ -46,6 +46,7 @@ namespace Nomina
                     Menu.Owner = this;
                     Menu.Show();
                 }
+
                 else
                     MessageBox.Show("Usuario o contraseña incorrectos!");
 

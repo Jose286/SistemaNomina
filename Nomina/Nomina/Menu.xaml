@@ -16,6 +16,7 @@
                 <MenuItem Header="Anticipos" Click="MenuAnticipos_Click" />
                 <MenuItem Header="Conceptos" Click="MenuConceptos_Click" />
                 <MenuItem Header="Vacaciones" Click="MenuItem_Click"/>
+                <MenuItem Header="Aumento Salarial" Click="MenuItem_Click_1"/>
                 <MenuItem Header="Salir" Click="MenuSalir_Click" />
             </MenuItem>
         </Menu>

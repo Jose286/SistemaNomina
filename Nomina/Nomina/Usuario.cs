@@ -14,14 +14,19 @@ namespace Nomina
     
     public partial class Usuario
     {
-        
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Usuario()
+        {
+            this.Empleado_Salario_Historico = new HashSet<Empleado_Salario_Historico>();
+        }
+    
         public int Id_Usuario { get; set; }
         public string Usuario1 { get; set; }
         public string Password { get; set; }
         public Nullable<int> Empleado_Id { get; set; }
     
         public virtual Empleado Empleado { get; set; }
-
-       
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Empleado_Salario_Historico> Empleado_Salario_Historico { get; set; }
     }
 }

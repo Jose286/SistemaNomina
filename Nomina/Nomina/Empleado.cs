@@ -21,6 +21,7 @@ namespace Nomina
             this.Usuario = new HashSet<Usuario>();
             this.Permisos = new HashSet<Permisos>();
             this.Vacaciones = new HashSet<Vacaciones>();
+            this.Empleado_Salario_Historico = new HashSet<Empleado_Salario_Historico>();
         }
     
         public int Id_Empleado { get; set; }
@@ -33,6 +34,7 @@ namespace Nomina
         public Nullable<System.DateTime> Fecha_Incorporacion { get; set; }
         public string Imagen_Perfil { get; set; }
         public int Salario_Basico { get; set; }
+        public Nullable<int> Turno_Id { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Anticipo> Anticipo { get; set; }
@@ -42,10 +44,8 @@ namespace Nomina
         public virtual ICollection<Permisos> Permisos { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Vacaciones> Vacaciones { get; set; }
-
-                public override string ToString()
-        {
-           return this.Apellidos + " " + this.Nombres;
-        }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Empleado_Salario_Historico> Empleado_Salario_Historico { get; set; }
+        public virtual Turno Turno { get; set; }
     }
 }

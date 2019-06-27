@@ -16,6 +16,10 @@
         <AssociationConnector Association="NominaModel.FK_Empleado_Usuario" ManuallyRouted="false" />
         <AssociationConnector Association="NominaModel.FK_Permisos_Empleado" ManuallyRouted="false" />
         <AssociationConnector Association="NominaModel.FK_Vacaciones_Empleado" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="NominaModel.Empleado_Salario_Historico" Width="1.5" PointX="5.25" PointY="7.125" />
+        <AssociationConnector Association="NominaModel.FK__Empleado___Emple__2E1BDC42" />
+        <AssociationConnector Association="NominaModel.FK__Empleado__Turno___21B6055D" />
+        <AssociationConnector Association="NominaModel.FK__Empleado___Usuar__2F10007B" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

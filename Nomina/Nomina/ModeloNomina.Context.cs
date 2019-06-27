@@ -32,5 +32,6 @@ namespace Nomina
         public virtual DbSet<Turno> Turno { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
         public virtual DbSet<Vacaciones> Vacaciones { get; set; }
+        public virtual DbSet<Empleado_Salario_Historico> Empleado_Salario_Historico { get; set; }
     }
 }

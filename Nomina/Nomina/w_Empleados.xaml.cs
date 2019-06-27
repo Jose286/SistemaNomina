@@ -46,6 +46,7 @@ namespace Nomina
                 txtSalarioBasico.Text = a.Salario_Basico.ToString();
                 dpFechaNacimiento.Text = a.Fecha_Nacimiento.ToString();
                 dpFechaIncorporacion.Text = a.Fecha_Incorporacion.ToString();
+                cboturno.SelectedItem = a.Turno;
                 //Cargamos la imagen
                 if (a.Imagen_Perfil != null)
                 {
@@ -70,6 +71,7 @@ namespace Nomina
             imgPhoto.Source = null;
             dpFechaIncorporacion.SelectedDate = null;
             dpFechaNacimiento.SelectedDate = null;
+            cboturno.SelectedItem = null;
         }
 
         private void BtnEliminar_Click(object sender, RoutedEventArgs e)
@@ -184,6 +186,7 @@ namespace Nomina
                 datos.SaveChanges();
                 CargarGrillaEmpleados();
             }
+
             else MessageBox.Show("fatltan datos");
 
         }

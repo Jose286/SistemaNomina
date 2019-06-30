@@ -307,12 +307,6 @@
         <EntityType Name="Vacaciones">
           <Key>
             <PropertyRef Name="Id_Vacaciones" />
-            <PropertyRef Name="Empleado_Id" />
-            <PropertyRef Name="Fecha_Desde" />
-            <PropertyRef Name="Fecha_Hasta" />
-            <PropertyRef Name="Fecha_Solicitud" />
-            <PropertyRef Name="Estado" />
-            <PropertyRef Name="Fecha_Definicion" />
           </Key>
           <Property Name="Id_Vacaciones" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Empleado_Id" Type="Int32" Nullable="false" />

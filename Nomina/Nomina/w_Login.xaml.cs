@@ -38,7 +38,7 @@ namespace Nomina
 
         private void btnIngresar_Click(object sender, RoutedEventArgs e)
         {
-           foreach (var user in datos.Usuario)
+           foreach (Usuario user in datos.Usuario)
            {
                 if (user.Usuario1 == txtUsuario.Text && user.Password == txtContraseña.Text)
                 {

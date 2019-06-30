@@ -11,7 +11,7 @@
         <EntityTypeShape EntityType="NominaModel.Permisos" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
         <EntityTypeShape EntityType="NominaModel.Turno" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="NominaModel.Usuario" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="NominaModel.Vacaciones" Width="2.5" PointX="3" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NominaModel.Vacaciones" Width="2.5" PointX="5.25" PointY="10.125" IsExpanded="true" />
         <AssociationConnector Association="NominaModel.FK_Anticipo_Empleado" ManuallyRouted="false" />
         <AssociationConnector Association="NominaModel.FK_Empleado_Usuario" ManuallyRouted="false" />
         <AssociationConnector Association="NominaModel.FK_Permisos_Empleado" ManuallyRouted="false" />

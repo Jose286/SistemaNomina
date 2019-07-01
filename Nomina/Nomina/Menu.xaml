@@ -7,18 +7,24 @@
         xmlns:local="clr-namespace:Nomina"
         mc:Ignorable="d"
         Title="Menu" Height="321.339" Width="608.787" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <Menu Name="MenuPrincipal" RenderTransformOrigin="0.5,0.5" Margin="0,0,16,0">
-            <MenuItem Header="Opciones">
-                <MenuItem Header="Permisos" Click="MenuPermisos_Click"/>
-                <MenuItem Header="Empleados" Click="MenuEmpleados_Click"/>
-                <MenuItem Header="Turnos" Click="MenuTurnos_Click" />
-                <MenuItem Header="Anticipos" Click="MenuAnticipos_Click" />
-                <MenuItem Header="Conceptos" Click="MenuConceptos_Click" />
-                <MenuItem Header="Vacaciones" Click="MenuItem_Click"/>
-                <MenuItem Header="Aumento Salarial" Click="MenuItem_Click_1"/>
-                <MenuItem Header="Salir" Click="MenuSalir_Click" />
+    <Canvas Background="BlueViolet" >
+     
+        <Menu Name="MenuPrincipal" RenderTransformOrigin="0.5,0.5" Margin="0,0,16,0" Background="DeepSkyBlue">
+            <MenuItem Header="Opciones" Background="DeepSkyBlue">
+                <MenuItem Header="Permisos" Click="MenuPermisos_Click" Background="DeepSkyBlue"/>
+                <MenuItem Header="Empleados" Click="MenuEmpleados_Click" Background="DeepSkyBlue"/>
+                <MenuItem Header="Anticipos" Click="MenuAnticipos_Click" Background="DeepSkyBlue" />
+                <MenuItem Header="Conceptos" Click="MenuConceptos_Click" Background="DeepSkyBlue" />
+                <MenuItem Header="Vacaciones" Click="MenuItem_Click" Background="DeepSkyBlue"/>
+                <MenuItem Header="Aumento Salarial" Click="MenuItem_Click_1" Background="DeepSkyBlue"/>
+                <MenuItem Header="Salir" Click="MenuSalir_Click"  Background="DeepSkyBlue"/>
+            </MenuItem>
+            <MenuItem Header="Turnos" Background="DeepSkyBlue">
+               <MenuItem Header="Agregar - Ver" Click="MenuTurnos_Click" Background="DeepSkyBlue" />                
+            </MenuItem>
+            <MenuItem Header="Empleados" Background="DeepSkyBlue">
+                <MenuItem Header="Ver - Agregar" Click="MenuEmpleados_Click" Background="DeepSkyBlue"/>
             </MenuItem>
         </Menu>
-    </Grid>
+    </Canvas>
 </Window>

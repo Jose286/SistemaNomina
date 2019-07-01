@@ -193,3 +193,4 @@ C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\N
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\Nomina.csproj.CopyComplete
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\Nomina.exe
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\Nomina.pdb
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\Nomina.csprojAssemblyReference.cache

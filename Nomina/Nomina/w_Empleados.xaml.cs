@@ -114,6 +114,7 @@ namespace Nomina
                 {
                     emple.Imagen_Perfil = imgPhoto.Source.ToString();
                 }
+                emple.Turno = (Turno)cboturno.SelectedItem;
                 //Le ponemos una banderita de que se modicaron datos en la entidad..
                 datos.Entry(emple).State = System.Data.Entity.EntityState.Modified;
                 datos.SaveChanges();
@@ -180,6 +181,8 @@ namespace Nomina
             {
                 emple.Imagen_Perfil = imgPhoto.Source.ToString();
             }
+
+            emple.Turno = (Turno)cboturno.SelectedItem;
             if (emple.Nombres != null && emple.Apellidos != null && emple.Nro_Documento != null && emple.Fecha_Nacimiento != null && emple.Nro_Telefono != null && emple.Salario_Basico != 0)
             {
                 datos.Empleado.Add(emple);
@@ -208,6 +211,13 @@ namespace Nomina
         private void DgEmpleados_Loaded(object sender, RoutedEventArgs e)
         {
             CargarGrillaEmpleados();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            cboturno.ItemsSource = datos.Turno.ToList();
+            cboturno.DisplayMemberPath = "Observaciones";
+            cboturno.SelectedValuePath = "Id_Turno";
         }
     }
 }

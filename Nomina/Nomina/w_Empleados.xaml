@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Nomina"
         mc:Ignorable="d"
-        Title="w_Empleados" Height="864.965" Width="1004">
+        Title="w_Empleados" Height="806.965" Width="1004" Loaded="Window_Loaded">
     <Canvas RenderTransformOrigin="0.499,0.634" Margin="0,0,2,24">
         <GroupBox Header="Datos del Empleado" Height="433" Canvas.Left="10" Canvas.Top="10" Width="957" RenderTransformOrigin="0.51,0.929">
             <Grid Margin="0,0,0,-22">

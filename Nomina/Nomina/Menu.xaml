@@ -25,6 +25,10 @@
             <MenuItem Header="Empleados" Background="DeepSkyBlue">
                 <MenuItem Header="Ver - Agregar" Click="MenuEmpleados_Click" Background="DeepSkyBlue"/>
             </MenuItem>
+
+            <MenuItem Header="Liquidación" Background="DeepSkyBlue">
+                <MenuItem Header="Mensual" Click="MenuItem_Click_2" Background="DeepSkyBlue"/>
+            </MenuItem>
         </Menu>
     </Canvas>
 </Window>

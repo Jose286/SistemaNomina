@@ -48,6 +48,27 @@
     <Property Name="Fecha_Hora" Type="datetime" Nullable="false" />
     <Property Name="Usuario_Id" Type="int" Nullable="false" />
   </EntityType>
+  <EntityType Name="Liquidacion_Mensual">
+    <Key>
+      <PropertyRef Name="Id_Liquidacion" />
+    </Key>
+    <Property Name="Id_Liquidacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Mes" Type="smallint" Nullable="false" />
+    <Property Name="Anho" Type="smallint" Nullable="false" />
+    <Property Name="Fecha_Generacion" Type="datetime" Nullable="false" />
+    <Property Name="Usuario_Id" Type="int" Nullable="false" />
+    <Property Name="Estado" Type="varchar" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Liquidacion_Mensual_Detalle">
+    <Key>
+      <PropertyRef Name="Id_Detalle" />
+    </Key>
+    <Property Name="Id_Detalle" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Liquidacion_Id" Type="int" Nullable="false" />
+    <Property Name="Empleado_Id" Type="int" Nullable="false" />
+    <Property Name="Concepto_Id" Type="int" Nullable="false" />
+    <Property Name="Monto" Type="int" Nullable="false" />
+  </EntityType>
   <EntityType Name="Permisos">
     <Key>
       <PropertyRef Name="Id_Permiso" />
@@ -129,6 +150,54 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK__Liquidaci__Conce__2B3F6F97">
+    <End Role="Concepto" Type="Self.Concepto" Multiplicity="1" />
+    <End Role="Liquidacion_Mensual_Detalle" Type="Self.Liquidacion_Mensual_Detalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Concepto">
+        <PropertyRef Name="Id_Concepto" />
+      </Principal>
+      <Dependent Role="Liquidacion_Mensual_Detalle">
+        <PropertyRef Name="Concepto_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Liquidaci__Emple__2A4B4B5E">
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
+    <End Role="Liquidacion_Mensual_Detalle" Type="Self.Liquidacion_Mensual_Detalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Id_Empleado" />
+      </Principal>
+      <Dependent Role="Liquidacion_Mensual_Detalle">
+        <PropertyRef Name="Empleado_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Liquidaci__Liqui__29572725">
+    <End Role="Liquidacion_Mensual" Type="Self.Liquidacion_Mensual" Multiplicity="1" />
+    <End Role="Liquidacion_Mensual_Detalle" Type="Self.Liquidacion_Mensual_Detalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Liquidacion_Mensual">
+        <PropertyRef Name="Id_Liquidacion" />
+      </Principal>
+      <Dependent Role="Liquidacion_Mensual_Detalle">
+        <PropertyRef Name="Liquidacion_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Liquidaci__Usuar__25869641">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Liquidacion_Mensual" Type="Self.Liquidacion_Mensual" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id_Usuario" />
+      </Principal>
+      <Dependent Role="Liquidacion_Mensual">
+        <PropertyRef Name="Usuario_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Anticipo_Empleado">
     <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
     <End Role="Anticipo" Type="Self.Anticipo" Multiplicity="*" />
@@ -182,6 +251,8 @@
     <EntitySet Name="Concepto" EntityType="Self.Concepto" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Empleado" EntityType="Self.Empleado" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Empleado_Salario_Historico" EntityType="Self.Empleado_Salario_Historico" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Liquidacion_Mensual" EntityType="Self.Liquidacion_Mensual" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Liquidacion_Mensual_Detalle" EntityType="Self.Liquidacion_Mensual_Detalle" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Permisos" EntityType="Self.Permisos" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Turno" EntityType="Self.Turno" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
@@ -197,6 +268,22 @@
     <AssociationSet Name="FK__Empleado__Turno___21B6055D" Association="Self.FK__Empleado__Turno___21B6055D">
       <End Role="Turno" EntitySet="Turno" />
       <End Role="Empleado" EntitySet="Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Liquidaci__Conce__2B3F6F97" Association="Self.FK__Liquidaci__Conce__2B3F6F97">
+      <End Role="Concepto" EntitySet="Concepto" />
+      <End Role="Liquidacion_Mensual_Detalle" EntitySet="Liquidacion_Mensual_Detalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Liquidaci__Emple__2A4B4B5E" Association="Self.FK__Liquidaci__Emple__2A4B4B5E">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="Liquidacion_Mensual_Detalle" EntitySet="Liquidacion_Mensual_Detalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Liquidaci__Liqui__29572725" Association="Self.FK__Liquidaci__Liqui__29572725">
+      <End Role="Liquidacion_Mensual" EntitySet="Liquidacion_Mensual" />
+      <End Role="Liquidacion_Mensual_Detalle" EntitySet="Liquidacion_Mensual_Detalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Liquidaci__Usuar__25869641" Association="Self.FK__Liquidaci__Usuar__25869641">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Liquidacion_Mensual" EntitySet="Liquidacion_Mensual" />
     </AssociationSet>
     <AssociationSet Name="FK_Anticipo_Empleado" Association="Self.FK_Anticipo_Empleado">
       <End Role="Empleado" EntitySet="Empleado" />

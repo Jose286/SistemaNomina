@@ -20,6 +20,12 @@
         <AssociationConnector Association="NominaModel.FK__Empleado___Emple__2E1BDC42" />
         <AssociationConnector Association="NominaModel.FK__Empleado__Turno___21B6055D" />
         <AssociationConnector Association="NominaModel.FK__Empleado___Usuar__2F10007B" />
+        <EntityTypeShape EntityType="NominaModel.Liquidacion_Mensual" Width="2.25" PointX="5.25" PointY="14.5" />
+        <EntityTypeShape EntityType="NominaModel.Liquidacion_Mensual_Detalle" Width="2.25" PointX="8" PointY="6.625" />
+        <AssociationConnector Association="NominaModel.FK__Liquidaci__Conce__2B3F6F97" />
+        <AssociationConnector Association="NominaModel.FK__Liquidaci__Emple__2A4B4B5E" />
+        <AssociationConnector Association="NominaModel.FK__Liquidaci__Liqui__29572725" />
+        <AssociationConnector Association="NominaModel.FK__Liquidaci__Usuar__25869641" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

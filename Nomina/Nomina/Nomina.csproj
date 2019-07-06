@@ -94,6 +94,12 @@
     <Compile Include="Empleado_Salario_Historico.cs">
       <DependentUpon>ModeloNomina.tt</DependentUpon>
     </Compile>
+    <Compile Include="Liquidacion_Mensual.cs">
+      <DependentUpon>ModeloNomina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Liquidacion_Mensual_Detalle.cs">
+      <DependentUpon>ModeloNomina.tt</DependentUpon>
+    </Compile>
     <Compile Include="Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>
     </Compile>
@@ -125,6 +131,9 @@
     </Compile>
     <Compile Include="w_Empleado_Salario_Aumento.xaml.cs">
       <DependentUpon>w_Empleado_Salario_Aumento.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="w_Liquidacion_Mensual.xaml.cs">
+      <DependentUpon>w_Liquidacion_Mensual.xaml</DependentUpon>
     </Compile>
     <Compile Include="w_Login.xaml.cs">
       <DependentUpon>w_Login.xaml</DependentUpon>
@@ -159,6 +168,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="w_Empleado_Salario_Aumento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="w_Liquidacion_Mensual.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

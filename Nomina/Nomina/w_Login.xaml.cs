@@ -45,13 +45,23 @@ namespace Nomina
                     Menu Menu = new Menu();
                     Menu.Owner = this;
                     Menu.Show();
+                    this.Hide();
+
+                    
+                }
+                
+
+                if (user.Usuario1 != txtUsuario.Text && user.Password != txtContraseña.Text)
+                {
+                    MessageBox.Show("Usuario o contraseña incorrectos!");
                 }
 
-                else
-                    MessageBox.Show("Usuario o contraseña incorrectos!");
+            }
 
+           
+                
 
-           }
+  
 
         }
     }

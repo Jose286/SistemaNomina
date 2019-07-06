@@ -102,5 +102,28 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Liquidacion_Mensual">
+      <EntityTypeMapping TypeName="NominaModel.Liquidacion_Mensual">
+        <MappingFragment StoreEntitySet="Liquidacion_Mensual">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Usuario_Id" ColumnName="Usuario_Id" />
+          <ScalarProperty Name="Fecha_Generacion" ColumnName="Fecha_Generacion" />
+          <ScalarProperty Name="Anho" ColumnName="Anho" />
+          <ScalarProperty Name="Mes" ColumnName="Mes" />
+          <ScalarProperty Name="Id_Liquidacion" ColumnName="Id_Liquidacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Liquidacion_Mensual_Detalle">
+      <EntityTypeMapping TypeName="NominaModel.Liquidacion_Mensual_Detalle">
+        <MappingFragment StoreEntitySet="Liquidacion_Mensual_Detalle">
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+          <ScalarProperty Name="Concepto_Id" ColumnName="Concepto_Id" />
+          <ScalarProperty Name="Empleado_Id" ColumnName="Empleado_Id" />
+          <ScalarProperty Name="Liquidacion_Id" ColumnName="Liquidacion_Id" />
+          <ScalarProperty Name="Id_Detalle" ColumnName="Id_Detalle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

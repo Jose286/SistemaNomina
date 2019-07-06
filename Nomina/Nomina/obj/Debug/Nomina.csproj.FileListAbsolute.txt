@@ -196,3 +196,5 @@ C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\N
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\Nomina.csprojAssemblyReference.cache
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Liquidacion_Mensual.g.cs
 C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Liquidacion_Mensual.baml
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Liquidacion_Mensual_Detalle.g.cs
+C:\Users\JULIO\Documents\UAA - JULIO ORTIZ\C#\SistemaNomina_repositorio\Nomina\Nomina\obj\Debug\w_Liquidacion_Mensual_Detalle.baml

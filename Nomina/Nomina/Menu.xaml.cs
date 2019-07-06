@@ -75,5 +75,11 @@ namespace Nomina
             w_Liquidacion_Mensual ventanaLiquidacion = new w_Liquidacion_Mensual();
             ventanaLiquidacion.ShowDialog();
         }
+
+        private void Detalle_Click(object sender, RoutedEventArgs e)
+        {
+            w_Liquidacion_Mensual_Detalle ventanaLiquidacionDetalle = new w_Liquidacion_Mensual_Detalle();
+            ventanaLiquidacionDetalle.ShowDialog();
+        }
     }
 }

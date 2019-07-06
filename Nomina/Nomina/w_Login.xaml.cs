@@ -42,21 +42,28 @@ namespace Nomina
            {
                 if (user.Usuario1 == txtUsuario.Text && user.Password == txtContraseña.Text)
                 {
+
+
                     Menu Menu = new Menu();
                     Menu.Owner = this;
                     Menu.Show();
                     this.Hide();
 
                     
+                    
                 }
-                
+                var UsuarioLogeado = from Logeado in datos.Usuario where Logeado.Usuario1 == txtUsuario.Text select Logeado.Id_Usuario;
 
                 if (user.Usuario1 != txtUsuario.Text && user.Password != txtContraseña.Text)
                 {
-                    MessageBox.Show("Usuario o contraseña incorrectos!");
+                    MessageBox.Show("Usuario o contraseña incorrectos!" + UsuarioLogeado );
                 }
 
+                
             }
+
+           
+
 
            
                 

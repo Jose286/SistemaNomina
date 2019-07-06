@@ -19,9 +19,13 @@ namespace Nomina
         public int Empleado_Id { get; set; }
         public int Concepto_Id { get; set; }
         public int Monto { get; set; }
+
+
     
         public virtual Concepto Concepto { get; set; }
         public virtual Empleado Empleado { get; set; }
         public virtual Liquidacion_Mensual Liquidacion_Mensual { get; set; }
+
+       
     }
 }

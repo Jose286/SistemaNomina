@@ -25,6 +25,6 @@ namespace Nomina.Properties
             {
                 return defaultInstance;
             }
-        }
+        }      
     }
 }

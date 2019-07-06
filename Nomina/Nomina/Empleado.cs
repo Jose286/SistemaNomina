@@ -36,7 +36,12 @@ namespace Nomina
         public string Imagen_Perfil { get; set; }
         public int Salario_Basico { get; set; }
         public Nullable<int> Turno_Id { get; set; }
-    
+
+        public string NombreCompleto
+        {
+            get { return Nombres + " " + Apellidos; }
+        }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Anticipo> Anticipo { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

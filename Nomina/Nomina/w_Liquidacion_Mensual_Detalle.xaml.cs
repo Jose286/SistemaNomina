@@ -26,21 +26,20 @@ namespace Nomina
             datos = new NominaEntities();
         }
 
-     
+
 
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
-            foreach (Liquidacion_Mensual Liquidacion in datos.Liquidacion_Mensual)
+            foreach (Liquidacion_Mensual  Liquidacion in datos.Liquidacion_Mensual)
             {
-                if(Liquidacion.Estado == "A")
+                if (Liquidacion.Estado == "A")
                 {
                     cboLiquidacion.ItemsSource = datos.Liquidacion_Mensual.ToList();
-                    cboLiquidacion.DisplayMemberPath = "MesAño";
+                    cboLiquidacion.DisplayMemberPath = "MesAnho";
                     cboLiquidacion.SelectedValuePath = "Id_Liquidacion";
                 }
-              
+
 
 
             }
@@ -56,7 +55,37 @@ namespace Nomina
 
         private void DgConceptosLiquidacion_Loaded(object sender, RoutedEventArgs e)
         {
-            dgConceptosLiquidacion.ItemsSource = datos.Liquidacion_Mensual_Detalle.ToList();
+            CargarGrillaConceptoLiquidacion();
+        }
+
+
+        public void CargarGrillaConceptoLiquidacion()
+        {
+            dgConceptosLiquidacion.ItemsSource = datos.Empleado.ToList();
+        }
+
+        private void btnAgregar_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtMonto.Text == "")
+            {
+                MessageBox.Show("Cargar Monto");
+                txtMonto.Focus();
+            }
+
+            Liquidacion_Mensual_Detalle liquimen = new Liquidacion_Mensual_Detalle();
+            liquimen.Liquidacion_Mensual = (Liquidacion_Mensual)cboLiquidacion.SelectedItem;
+            liquimen.Empleado = (Empleado)cboEmpleado.SelectedItem;
+            liquimen.Concepto = (Concepto)cboConcepto.SelectedItem;
+            liquimen.Monto = Convert.ToInt32(txtMonto.Text);
+
+            if (liquimen.Liquidacion_Mensual != null && liquimen.Empleado != null && liquimen.Concepto != null && liquimen.Monto !=0)
+            {
+                datos.Liquidacion_Mensual_Detalle.Add(liquimen);
+                datos.SaveChanges();
+                CargarGrillaConceptoLiquidacion();
+            }
+
+            else MessageBox.Show("fatltan datos");
         }
     }
 }

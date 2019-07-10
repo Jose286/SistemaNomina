@@ -25,6 +25,15 @@ namespace Nomina.Properties
             {
                 return defaultInstance;
             }
-        }      
+        }  
+        
+        public int usuarioLogeado {
+            get {
+                return ((int)(this["usuarioLogeado"]));
+            }
+            set {
+                this["usuarioLogeado"] = value;
+            }
+        }
     }
 }

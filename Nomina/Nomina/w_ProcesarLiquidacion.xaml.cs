@@ -27,7 +27,96 @@ namespace Nomina
 
         private void Procesar_Click(object sender, RoutedEventArgs e)
         {
+             if (dgLiquidaciones.ItemsSource != null)
+            {
+                Liquidacion_Mensual dd = (Liquidacion_Mensual)dgLiquidaciones.SelectedItem;
 
+                if (dd.Estado.ToString() == "A")
+                {
+                    var lstEmpleado = datos.Empleado.ToList();
+
+                    foreach (Empleado ee in lstEmpleado)
+                    {
+                        int vIngreso = 0;
+                        int vEgresos = 0;
+                        int vTotal = 0;
+                        double vIps = 0;
+                        var detalleLiquidacion = ee.Liquidacion_Mensual_Detalle.ToList().FindAll(x => x.Liquidacion_Id == dd.Id_Liquidacion);
+
+                        vIngreso = vIngreso + ee.Salario_Basico;
+
+                        if (detalleLiquidacion.Count > 0)
+                        {
+                            foreach (Liquidacion_Mensual_Detalle det in detalleLiquidacion)
+                            {
+                                if (det.Monto > 0)
+                                {
+                                    vIngreso = vIngreso + det.Monto;
+                                }
+                                else
+                                {
+                                    vEgresos = vEgresos + det.Monto * -1;
+                                }
+                            }
+                        }
+
+                        vIps = vIngreso * 0.09;
+                        Liquidacion_Mensual_Detalle nuevoIps = new Liquidacion_Mensual_Detalle();
+                        nuevoIps.Concepto_Id = 1;
+                        nuevoIps.Empleado = ee;
+                        nuevoIps.Liquidacion_Mensual = dd;
+                        nuevoIps.Monto = int.Parse((vIps * -1).ToString());
+
+                        datos.Liquidacion_Mensual_Detalle.Add(nuevoIps);
+                        datos.SaveChanges();
+
+                        var adelantos = ee.Anticipo.ToList().FindAll(x => DateTime.Parse(x.Fecha_Definicion.ToString()).Month == dd.Mes && DateTime.Parse(x.Fecha_Definicion.ToString()).Year == dd.Anho && x.Estado == "A");
+
+                        if (adelantos.Count > 0)
+                        {
+                            int vAnticipo = 0;
+                            foreach (Anticipo an in adelantos)
+                            {
+                                vEgresos = vEgresos + an.Monto_Aprobado;
+                                vAnticipo = vAnticipo + an.Monto_Aprobado;
+                            }
+
+                            Liquidacion_Mensual_Detalle anticipo = new Liquidacion_Mensual_Detalle();
+                            anticipo.Concepto_Id = 2;
+                            anticipo.Empleado = ee;
+                            anticipo.Liquidacion_Mensual = dd;
+                            anticipo.Monto = vAnticipo * -1;
+
+                            datos.Liquidacion_Mensual_Detalle.Add(anticipo);
+                            datos.SaveChanges();
+                        }
+
+                        vTotal = vIngreso - vEgresos;
+                        ResumenLiquidacion resumen = new ResumenLiquidacion();
+                        resumen.Empleado = ee;
+                        resumen.Liquidacion_Mensual = dd;
+                        resumen.MontoEgreso = vEgresos;
+                        resumen.MontoIngreso = vIngreso;
+
+                        datos.ResumenLiquidacion.Add(resumen);
+                        datos.SaveChanges();
+                    }
+
+                    dd.Estado = "C";
+                    datos.Entry(dd).State = System.Data.Entity.EntityState.Modified;
+                    datos.SaveChanges();
+                    CargarGrilliqui();
+                }
+                else
+                {
+                    MessageBox.Show("Solo puede procesar una liquidacion con estado 'A'");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un registro para procesar la liquidación");
+            }
+        }
         }
 
         public void CargarGrilliqui()

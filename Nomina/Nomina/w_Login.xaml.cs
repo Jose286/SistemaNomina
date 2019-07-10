@@ -48,6 +48,8 @@ namespace Nomina
                     Menu.Owner = this;
                     Menu.Show();
                     this.Hide();
+                    
+                    ProyectoNomina.Properties.Settings.Default.usuarioLogeado = user.Id_Usuario;
 
                     
                     

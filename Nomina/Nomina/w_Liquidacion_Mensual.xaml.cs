@@ -35,6 +35,9 @@ namespace Nomina
 
         private void BtnAgregar_Click(object sender, RoutedEventArgs e)
         {
+        
+         try
+            {
             Liquidacion_Mensual Mensual = new Liquidacion_Mensual();
 
             Mensual.Mes = short.Parse(txtMes.Text);
@@ -46,7 +49,14 @@ namespace Nomina
 
             datos.Liquidacion_Mensual.Add(Mensual);
             datos.SaveChanges();
-            MessageBox.Show("Liquidación Creada correctamente!  " + txtMes.Text + "-" + txtAño.Text);
+            MessageBox.Show("Liquidación Creada correctamente!  " + txtMes.Text + "-" + txtAño.Text);    
+            
+            }
+             catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar liquidacion, favor verificar.");
+            }
+
 
         }
 

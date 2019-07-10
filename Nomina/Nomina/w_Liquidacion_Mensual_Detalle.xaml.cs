@@ -96,6 +96,20 @@ namespace Nomina
 
         }
 
+        private void btneliminar_Click(object sender, RoutedEventArgs e)
+        {
+            if (dgConceptosLiquidacion.SelectedItem != null)
+            {
+                Liquidacion_Mensual_Detalle a = (Liquidacion_Mensual_Detalle)dgConceptosLiquidacion.SelectedItem;
+                datos.Liquidacion_Mensual_Detalle.Remove(a);
+                datos.SaveChanges();
+                CargarGrillaConceptoLiquidacion();
+            }
+            else
+                MessageBox.Show("Debe seleccionar un detalle de la grilla para eliminar!");
+
+        }
+    }
     }
     }
     

@@ -32,5 +32,6 @@
         </GroupBox>
         <Button x:Name="btnAgregar" Content="Agregar" Click="btnAgregar_Click" Canvas.Left="43" Canvas.Top="383" Width="90"/>
         <Button x:Name="btnmodificar" Content="Modificar" Click="btnmodificar_Click" Height="34" Canvas.Left="179" Canvas.Top="383" Width="105"/>
+        <Button x:Name="btneliminar" Content="Eliminar" Click="btneliminar_Click" Height="34" Canvas.Left="328" Canvas.Top="381" Width="95"/>
     </Canvas>
 </Window>

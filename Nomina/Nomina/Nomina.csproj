@@ -126,6 +126,9 @@
     <Compile Include="w_Conceptos.xaml.cs">
       <DependentUpon>w_Conceptos.xaml</DependentUpon>
     </Compile>
+    <Compile Include="w_DetalleLiquidacionEmpleado.xaml.cs">
+      <DependentUpon>w_DetalleLiquidacionEmpleado.xaml</DependentUpon>
+    </Compile>
     <Compile Include="w_Empleados.xaml.cs">
       <DependentUpon>w_Empleados.xaml</DependentUpon>
     </Compile>
@@ -166,6 +169,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="w_Conceptos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="w_DetalleLiquidacionEmpleado.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

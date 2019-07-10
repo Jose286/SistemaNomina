@@ -87,5 +87,25 @@ namespace Nomina
 
             else MessageBox.Show("fatltan datos");
         }
+
+        private void btnmodificar_Click(object sender, RoutedEventArgs e)
+        {
+            if (dgConceptosLiquidacion.SelectedItem != null)
+            {
+                Liquidacion_Mensual_Detalle liquime = (Liquidacion_Mensual_Detalle)dgConceptosLiquidacion.SelectedItem;
+                liquime.Empleado = (Empleado)cboEmpleado.SelectedItem;
+                liquime.Concepto = (Concepto)cboConcepto.SelectedItem;
+                liquime.Monto = Convert.ToInt32(txtMonto.Text);
+
+                //Le ponemos una banderita de que se modicaron datos en la entidad..
+                datos.Entry(liquime).State = System.Data.Entity.EntityState.Modified;
+                datos.SaveChanges();
+                CargarGrillaConceptoLiquidacion();
+            }
+            else
+                MessageBox.Show("Debe seleccionar el detalle de la liquidacion para modificar!");
+
+        }
+
     }
-}
+    }

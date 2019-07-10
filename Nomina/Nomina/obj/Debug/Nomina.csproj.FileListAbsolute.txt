@@ -259,7 +259,6 @@ C:\Users\User\Documents\repos\Nomina\Nomina\bin\Debug\EntityFramework.xml
 C:\Users\User\Documents\repos\Nomina\Nomina\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\User\Documents\repos\Nomina\Nomina\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\Users\User\Documents\repos\Nomina\Nomina\bin\Debug\MaterialDesignThemes.Wpf.xml
-C:\Users\User\Documents\repos\Nomina\Nomina\obj\Debug\Nomina.csprojAssemblyReference.cache
 C:\Users\User\Documents\repos\Nomina\Nomina\obj\Debug\Menu.g.cs
 C:\Users\User\Documents\repos\Nomina\Nomina\obj\Debug\w_Anticipos.g.cs
 C:\Users\User\Documents\repos\Nomina\Nomina\obj\Debug\w_Conceptos.g.cs

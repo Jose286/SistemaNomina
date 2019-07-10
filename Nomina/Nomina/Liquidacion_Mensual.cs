@@ -45,8 +45,12 @@ public partial class Liquidacion_Mensual
 
     public virtual ICollection<Liquidacion_Mensual_Detalle> Liquidacion_Mensual_Detalle { get; set; }
 
-    public virtual Usuario Usuario { get; set; }
+        public override string ToString()
+        {
+            return this.Estado;
+        }
 
-}
+        public virtual Usuario Usuario { get; set; }
+     }
 
 }

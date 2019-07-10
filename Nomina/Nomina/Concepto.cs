@@ -39,6 +39,11 @@ public partial class Concepto
 
     public virtual ICollection<Liquidacion_Mensual_Detalle> Liquidacion_Mensual_Detalle { get; set; }
 
-}
+        public override string ToString()
+        {
+            return this.Descripcion;
+        }
+
+    }
 
 }

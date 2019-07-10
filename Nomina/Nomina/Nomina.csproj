@@ -144,6 +144,9 @@
     <Compile Include="w_Permisos.xaml.cs">
       <DependentUpon>w_Permisos.xaml</DependentUpon>
     </Compile>
+    <Compile Include="w_ProcesarLiquidacion.xaml.cs">
+      <DependentUpon>w_ProcesarLiquidacion.xaml</DependentUpon>
+    </Compile>
     <Compile Include="w_Turno.xaml.cs">
       <DependentUpon>w_Turno.xaml</DependentUpon>
     </Compile>
@@ -187,6 +190,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="w_Permisos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="w_ProcesarLiquidacion.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

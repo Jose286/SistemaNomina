@@ -19,32 +19,21 @@ namespace Nomina
     /// </summary>
     public partial class w_Liquidacion_Mensual_Detalle : Window
     {
+        //private const string V = "Mes";
         NominaEntities datos;
         public w_Liquidacion_Mensual_Detalle()
         {
             InitializeComponent();
             datos = new NominaEntities();
         }
-
-
-
-
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            foreach (Liquidacion_Mensual  Liquidacion in datos.Liquidacion_Mensual)
-            {
-                if (Liquidacion.Estado == "A")
-                {
-                    cboLiquidacion.ItemsSource = datos.Liquidacion_Mensual.ToList();
-                    cboLiquidacion.DisplayMemberPath = "MesAnho";
-                    cboLiquidacion.SelectedValuePath = "Id_Liquidacion";
-                }
+            cboLiquidacion.ItemsSource = datos.Liquidacion_Mensual.ToList();
+            cboLiquidacion.DisplayMemberPath = "Mes";
+            cboLiquidacion.SelectedValuePath = "Id_Liquidacion";
 
-
-
-            }
             cboEmpleado.ItemsSource = datos.Empleado.ToList();
-            cboEmpleado.DisplayMemberPath = "NombreCompleto";
+            cboEmpleado.DisplayMemberPath = "Nombres";
             cboEmpleado.SelectedValuePath = "Id_Empleado";
 
             cboConcepto.ItemsSource = datos.Concepto.ToList();
@@ -61,7 +50,7 @@ namespace Nomina
 
         public void CargarGrillaConceptoLiquidacion()
         {
-            dgConceptosLiquidacion.ItemsSource = datos.Empleado.ToList();
+            dgConceptosLiquidacion.ItemsSource = datos.Liquidacion_Mensual_Detalle.ToList();
         }
 
         private void btnAgregar_Click(object sender, RoutedEventArgs e)

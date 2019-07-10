@@ -41,6 +41,10 @@ public partial class Turno
 
     public virtual ICollection<Empleado> Empleado { get; set; }
 
-}
+        public override string ToString()
+        {
+            return this.Observaciones;
+        }
+    }
 
 }

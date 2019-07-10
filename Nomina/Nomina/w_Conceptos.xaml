@@ -5,19 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Nomina"
         mc:Ignorable="d"
-        Title="w_Conceptos" Height="300" Width="600" WindowStartupLocation="CenterScreen">
-    <Grid>
+        Title="w_Conceptos" Height="454.065" Width="467.533" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,12">
         <Label x:Name="lblidconcepto" Content="Id Conccepto" HorizontalAlignment="Left" Margin="32,50,0,0" VerticalAlignment="Top" Width="90"/>
         <Label x:Name="lbldescripcion" Content="Descripcion" HorizontalAlignment="Left" Margin="36,84,0,0" VerticalAlignment="Top" Height="27" Width="81"/>
         <Label x:Name="lbltipo" Content="Tipo" HorizontalAlignment="Left" Margin="34,129,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtidconcepto" HorizontalAlignment="Left" Height="23" Margin="191,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" IsReadOnly="True" Width="120"/>
-        <GroupBox x:Name="groupBox" Header="Datos de Conceptos" HorizontalAlignment="Left" Height="196" Margin="25,24,0,0" VerticalAlignment="Top" Width="415">
+        <GroupBox x:Name="groupBox" Header="Datos de Conceptos" HorizontalAlignment="Left" Height="210" Margin="25,10,0,0" VerticalAlignment="Top" Width="415">
             <TextBox x:Name="txtdescripcion" HorizontalAlignment="Left" Height="23" Margin="160,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         </GroupBox>
         <TextBox x:Name="txttipo" HorizontalAlignment="Left" Height="23" Margin="194,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnagregar" Content="Agregar" HorizontalAlignment="Left" Margin="59,360,0,0" VerticalAlignment="Top" Width="75" Click="btnagregar_Click"/>
-        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="276,359,0,0" VerticalAlignment="Top" Width="75" Click="btnEliminar_Click"/>
-        <DataGrid x:Name="dgconceptos" HorizontalAlignment="Left" Height="115" Margin="35,223,0,0" VerticalAlignment="Top" Width="345"/>
+        <Button x:Name="btnagregar" Content="Agregar" HorizontalAlignment="Left" Margin="92,366,0,0" VerticalAlignment="Top" Width="104" Click="btnagregar_Click"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="247,366,0,0" VerticalAlignment="Top" Width="107" Click="btnEliminar_Click"/>
+        <DataGrid x:Name="dgconceptos" Loaded="Dgconceptos_Loaded" HorizontalAlignment="Left" Height="138" Margin="25,223,0,0" VerticalAlignment="Top" Width="415"/>
 
     </Grid>
 </Window>

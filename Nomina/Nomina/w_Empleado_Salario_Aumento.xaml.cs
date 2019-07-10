@@ -49,18 +49,20 @@ namespace Nomina
             if (dgAumentoSalarial.SelectedItem != null)
             {
 
-                Empleado_Salario_Historico h = (Empleado_Salario_Historico)dgAumentoSalarial.SelectedItem;
+                Empleado_Salario_Historico h = new Empleado_Salario_Historico();
 
-                Empleado em = (Empleado)dgAumentoSalarial.SelectedItem;
-                             
+                Empleado em = new Empleado();
+
+
+
                 //Se carga los datos historicos, el empleado, el salario anterior y el nuevo con la fecha
-                h.Empleado_Id = em.Id_Empleado;
-                h.Salario_Basico_Anterior = em.Salario_Basico;
-                h.Salario_Basico_Anterior = int.Parse(txtNuevoSalario.Text);
-                h.Fecha_Hora = DateTime.Today;
+                //h.Empleado_Id = em.Id_Empleado;
+                // h.Salario_Basico_Anterior = em.Salario_Basico;
+                // h.Salario_Basico_Anterior = int.Parse(txtNuevoSalario.Text);
+                // h.Fecha_Hora = DateTime.Today;
 
                 //Se actualiza el salario nuevo del empleado despues de haber guardado el dato historico                
-                em.Salario_Basico = int.Parse(txtNuevoSalario.Text);
+                // em.Salario_Basico = int.Parse(txtNuevoSalario.Text);
 
                 datos.Empleado_Salario_Historico.Add(h);
                 datos.SaveChanges();

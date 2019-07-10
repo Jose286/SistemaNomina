@@ -28,7 +28,7 @@ namespace Nomina
 
         public void CargarGrillaConceptos()
         {
-            dgconceptos.ItemsSource = datos.Turno.ToList();
+            dgconceptos.ItemsSource = datos.Concepto.ToList();
         }
 
         private void btnagregar_Click(object sender, RoutedEventArgs e)
@@ -37,11 +37,9 @@ namespace Nomina
             //c.Id_Concepto = int.Parse(txtidconcepto.Text);
             c.Descripcion = txtdescripcion.Text;
             c.Tipo = txttipo.Text;
-
             datos.Concepto.Add(c);
             datos.SaveChanges();
             CargarGrillaConceptos();
-
         }
 
         private void btnEliminar_Click(object sender, RoutedEventArgs e)
@@ -56,6 +54,11 @@ namespace Nomina
             else
                 MessageBox.Show("Debe seleccionar un empleado de la grilla para eliminar!");
 
+        }
+
+        private void Dgconceptos_Loaded(object sender, RoutedEventArgs e)
+        {
+            CargarGrillaConceptos();
         }
     }
 }

@@ -5,12 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Nomina"
         mc:Ignorable="d"
-        Title="w_Empleado_Salario_Aumento" Height="450" Width="800">
+        Title="w_Empleado_Salario_Aumento" Height="450" Width="1006.775" ResizeMode="NoResize">
     <Canvas>
-        <GroupBox Header="Aumento Salarial" Height="280" Width="772" Canvas.Left="10" Canvas.Top="10">
+        <GroupBox Header="Aumento Salarial" Height="280" Width="979" Canvas.Left="10" Canvas.Top="10">
             <DataGrid Name="dgAumentoSalarial" Loaded="DgAumentoSalarial_Loaded" />
-
-
         </GroupBox>
         
             <Label x:Name="label" Content="Nuevo Salario:" Canvas.Left="30" Canvas.Top="314" Height="32" Width="97" Margin="0,4,0,43"/>

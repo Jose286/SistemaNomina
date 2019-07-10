@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Nomina"
         mc:Ignorable="d"
-        Title="w_Anticipos" Height="300" Width="600"  WindowStartupLocation="CenterScreen">
+        Title="w_Anticipos" Height="300" Width="600"  WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
         
     <Canvas>
       <GroupBox Header="Anticipos Solicitados" Canvas.Left="10" Canvas.Top="10" Width="572" Height="219">

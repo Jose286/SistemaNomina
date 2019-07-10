@@ -87,6 +87,11 @@ public partial class Empleado
 
     public virtual ICollection<Liquidacion_Mensual_Detalle> Liquidacion_Mensual_Detalle { get; set; }
 
-}
+        public override string ToString()
+        {
+            return this.Nombres + ' '+ this.Apellidos;
+        }
+
+    }
 
 }

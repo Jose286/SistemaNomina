@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Nomina"
         mc:Ignorable="d"
-        Title="w_Vacaciones" Height="388.49" Width="600" WindowStartupLocation="CenterScreen">
+        Title="w_Vacaciones" Height="339.095" Width="758.867" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Canvas>
-        <GroupBox Header="Vacaciones" Height="223" Canvas.Left="10" Width="572" Canvas.Top="10">
-            <DataGrid x:Name="dgVacaciones" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="193" Width="552" Canvas.Left="10" Loaded="dgVacaciones_Loaded" Margin="0,0,0,-6"/>
+        <GroupBox Header="Vacaciones" Height="223" Canvas.Left="10" Width="731" Canvas.Top="10">
+            <DataGrid x:Name="dgVacaciones" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="173" Width="721" Canvas.Left="10" Loaded="dgVacaciones_Loaded" Margin="0,0,0,-2"/>
         </GroupBox>
-        <Button Name="BtnAprobar" Content="Aprobar" Click="BtnAprobar_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Canvas.Left="189" Canvas.Top="260"/>
-        <Button Name="BtnRechazar" Content="Rechazar" Click="BtnRechazar_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Canvas.Left="334" Canvas.Top="260"/>
+        <Button Name="BtnAprobar" Content="Aprobar" Click="BtnAprobar_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="97" Canvas.Left="266" Canvas.Top="254"/>
+        <Button Name="BtnRechazar" Content="Rechazar" Click="BtnRechazar_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Canvas.Left="411" Canvas.Top="254" RenderTransformOrigin="1.743,0.502"/>
 
     </Canvas>
 </Window>

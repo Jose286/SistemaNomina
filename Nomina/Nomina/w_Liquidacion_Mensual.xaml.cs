@@ -41,8 +41,8 @@ namespace Nomina
             Mensual.Anho = short.Parse(txtAño.Text);
             Mensual.Estado = "A";
             Mensual.Fecha_Generacion = DateTime.Now;
-            //Mensual.Usuario = " ";
-            Mensual.Usuario_Id = 1;
+            
+            Mensual.Usuario_Id = ProyectoNomina.Properties.Settings.Default.usuarioLogeado;
 
             datos.Liquidacion_Mensual.Add(Mensual);
             datos.SaveChanges();

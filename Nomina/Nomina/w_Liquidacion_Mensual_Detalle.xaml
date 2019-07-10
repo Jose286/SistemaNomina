@@ -30,7 +30,8 @@
         <GroupBox Header="Empleados Existentes" Canvas.Left="395" Canvas.Top="17" Width="387" Height="359" >
             <DataGrid Name="dgConceptosLiquidacion" Loaded="DgConceptosLiquidacion_Loaded" ></DataGrid>
         </GroupBox>
-        <Button x:Name="btnAgregar" Content="Agregar" Click="btnAgregar_Click" Canvas.Left="152" Canvas.Top="381" Width="90"/>
-        <Button x:Name="btnmodificar" Content="Modificar" Click="btnmodificar_Click" Height="34" Canvas.Left="299" Canvas.Top="381" Width="105"/>
+        <Button x:Name="btnAgregar" Content="Agregar" Click="btnAgregar_Click" Canvas.Left="43" Canvas.Top="383" Width="90"/>
+        <Button x:Name="btnmodificar" Content="Modificar" Click="btnmodificar_Click" Height="34" Canvas.Left="179" Canvas.Top="383" Width="105"/>
+        <Button x:Name="btneliminar" Content="Eliminar" Click="btneliminar_Click" Canvas.Left="321" Canvas.Top="383" Width="115"/>
     </Canvas>
 </Window>

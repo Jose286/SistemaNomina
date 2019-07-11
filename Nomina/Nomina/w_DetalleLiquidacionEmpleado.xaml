@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Nomina"
         mc:Ignorable="d"
-        Title="w_DetalleLiquidacionEmpleado" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="w_DetalleLiquidacionEmpleado" Height="450" Width="800" >
     <Canvas>
         <Label x:Name="label" Content="Empleado" Canvas.Left="24" Canvas.Top="26"/>
         <ComboBox x:Name="cboEmpleado" Canvas.Left="91" Canvas.Top="22" Width="172" Height="28"/>
         <Label x:Name="label1" Content="Liquidacion" Canvas.Left="309" Canvas.Top="22"/>
         <ComboBox x:Name="cboLiquidacion" Canvas.Left="384" Canvas.Top="20" Width="196"/>
-        <Button x:Name="btnVerDetalle" Content="Ver Detalle" Canvas.Left="649" Canvas.Top="20" Width="122" Click="btnVerDetalle_Click"/>
+        <Button x:Name="btnVerDetalle" Content="Ver Detalle" Canvas.Left="649" Canvas.Top="20" Width="122" />
         <DataGrid x:Name="dgDetalle" Canvas.Left="10" Canvas.Top="66" Height="359" Width="774"/>
         <Label x:Name="label2" Content="Ingresos:" Canvas.Left="24" Canvas.Top="437"/>
         <Label x:Name="lblIngresos" Content="0" Canvas.Left="82" Canvas.Top="437" FontWeight="Bold" Foreground="#DD1EB13F"/>

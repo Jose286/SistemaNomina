@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\User\Documents\repos\Nomina\Nomina\obj\Debug\
+C:\Users\JULIO\Desktop\Nueva carpeta\Nomina\Nomina\obj\Debug\
 Nomina
 none
 false
 DEBUG;TRACE
-C:\Users\User\Documents\repos\Nomina\Nomina\App.xaml
-11-739202632
+C:\Users\JULIO\Desktop\Nueva carpeta\Nomina\Nomina\App.xaml
+131558844678
 2-776163240
-28396087116
-221267447648
-Menu.xaml;w_Anticipos.xaml;w_Conceptos.xaml;w_Empleados.xaml;w_Empleado_Salario_Aumento.xaml;w_Liquidacion_Mensual.xaml;w_Liquidacion_Mensual_Detalle.xaml;w_Login.xaml;w_Permisos.xaml;w_Turno.xaml;w_Vacaciones.xaml;
+301673860201
+22101530952
+Menu.xaml;w_Anticipos.xaml;w_Conceptos.xaml;w_DetalleLiquidacionEmpleado.xaml;w_Empleados.xaml;w_Empleado_Salario_Aumento.xaml;w_Liquidacion_Mensual.xaml;w_Liquidacion_Mensual_Detalle.xaml;w_Login.xaml;w_Permisos.xaml;w_ProcesarLiquidacion.xaml;w_Turno.xaml;w_Vacaciones.xaml;
 
 False
 

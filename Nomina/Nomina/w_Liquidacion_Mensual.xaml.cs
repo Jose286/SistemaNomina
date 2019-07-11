@@ -36,29 +36,19 @@ namespace Nomina
         private void BtnAgregar_Click(object sender, RoutedEventArgs e)
         {
         
-         try
-            {
+        
             Liquidacion_Mensual Mensual = new Liquidacion_Mensual();
 
             Mensual.Mes = short.Parse(txtMes.Text);
             Mensual.Anho = short.Parse(txtAño.Text);
             Mensual.Estado = "A";
             Mensual.Fecha_Generacion = DateTime.Now;
-            
-            Mensual.Usuario_Id = ProyectoNomina.Properties.Settings.Default.usuarioLogeado;
-
+            Mensual.Usuario_Id = 1;
             datos.Liquidacion_Mensual.Add(Mensual);
             datos.SaveChanges();
             MessageBox.Show("Liquidación Creada correctamente!  " + txtMes.Text + "-" + txtAño.Text);    
             
             }
-             catch (Exception ex)
-            {
-                MessageBox.Show("Error al cargar liquidacion, favor verificar.");
-            }
-
-
-        }
 
        
     }

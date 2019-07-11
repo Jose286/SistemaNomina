@@ -26,6 +26,7 @@
         <AssociationConnector Association="NominaModel.FK__Liquidaci__Emple__2A4B4B5E" />
         <AssociationConnector Association="NominaModel.FK__Liquidaci__Liqui__29572725" />
         <AssociationConnector Association="NominaModel.FK__Liquidaci__Usuar__25869641" />
+        <EntityTypeShape EntityType="NominaModel.v_Calculo" Width="1.5" PointX="8.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

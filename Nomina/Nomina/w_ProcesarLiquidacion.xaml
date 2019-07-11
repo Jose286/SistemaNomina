@@ -9,7 +9,7 @@
     <Grid>
         <Canvas Margin="0,0,0,27">
             <GroupBox Header="Liquidaciones" HorizontalAlignment="Left" Height="316" VerticalAlignment="Top" Width="435" Canvas.Left="10" Canvas.Top="10">
-                <DataGrid x:Name="dgLiquidaciones" Height="264" Loaded="DgLiquidaciones_Loaded" VerticalAlignment="Top" Width="379"/>
+                <DataGrid x:Name="dgLiquidaciones" Height="264"  VerticalAlignment="Top" Width="379"/>
             </GroupBox>
             <Button Content="Procesar" Name="Procesar" Click="Procesar_Click" Canvas.Left="170" Canvas.Top="351" Width="100" RenderTransformOrigin="1.039,0.377"/>
         </Canvas>

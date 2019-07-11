@@ -27,13 +27,13 @@ namespace Nomina.Properties
             }
         }  
         
-        public int usuarioLogeado {
+        /*public int usuarioLogeado {
             get {
                 return ((int)(this["usuarioLogeado"]));
             }
             set {
                 this["usuarioLogeado"] = value;
-            }
+            }*/
         }
     }
-}
+

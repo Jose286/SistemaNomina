@@ -119,6 +119,23 @@
           <Property Name="Fecha_Definicion" Type="date" Nullable="false" />
           <Property Name="Observaciones" Type="varchar" MaxLength="1000" />
         </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'Nomina.dbo.v_Calculo' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="v_Calculo">
+          <Key>
+            <PropertyRef Name="Id_Empleado" />
+            <PropertyRef Name="Nombres" />
+            <PropertyRef Name="Salario_Basico" />
+          </Key>
+          <Property Name="Id_Empleado" Type="int" Nullable="false" />
+          <Property Name="Nombres" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="Salario_Basico" Type="int" Nullable="false" />
+          <Property Name="Tipo" Type="varchar" MaxLength="1" />
+          <Property Name="Id_Anticipo" Type="int" />
+          <Property Name="Id_Concepto" Type="int" />
+          <Property Name="montoConc" Type="int" />
+          <Property Name="montoAdelanto" Type="int" />
+        </EntityType>
         <Association Name="FK__Empleado___Emple__2E1BDC42">
           <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
           <End Role="Empleado_Salario_Historico" Type="Self.Empleado_Salario_Historico" Multiplicity="*" />
@@ -262,6 +279,18 @@
           <EntitySet Name="Turno" EntityType="Self.Turno" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Vacaciones" EntityType="Self.Vacaciones" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="v_Calculo" EntityType="Self.v_Calculo" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [v_Calculo].[Id_Empleado] AS [Id_Empleado], 
+    [v_Calculo].[Nombres] AS [Nombres], 
+    [v_Calculo].[Salario_Basico] AS [Salario_Basico], 
+    [v_Calculo].[Tipo] AS [Tipo], 
+    [v_Calculo].[Id_Anticipo] AS [Id_Anticipo], 
+    [v_Calculo].[Id_Concepto] AS [Id_Concepto], 
+    [v_Calculo].[montoConc] AS [montoConc], 
+    [v_Calculo].[montoAdelanto] AS [montoAdelanto]
+    FROM [dbo].[v_Calculo] AS [v_Calculo]</DefiningQuery>
+          </EntitySet>
           <AssociationSet Name="FK__Empleado___Emple__2E1BDC42" Association="Self.FK__Empleado___Emple__2E1BDC42">
             <End Role="Empleado" EntitySet="Empleado" />
             <End Role="Empleado_Salario_Historico" EntitySet="Empleado_Salario_Historico" />
@@ -511,6 +540,7 @@
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="Liquidacion_Mensual" EntitySet="Liquidacion_Mensual" />
           </AssociationSet>
+          <EntitySet Name="v_Calculo" EntityType="NominaModel.v_Calculo" />
         </EntityContainer>
         <EntityType Name="Empleado_Salario_Historico">
           <Key>
@@ -635,6 +665,21 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="v_Calculo">
+          <Key>
+            <PropertyRef Name="Id_Empleado" />
+            <PropertyRef Name="Nombres" />
+            <PropertyRef Name="Salario_Basico" />
+          </Key>
+          <Property Name="Id_Empleado" Type="Int32" Nullable="false" />
+          <Property Name="Nombres" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Salario_Basico" Type="Int32" Nullable="false" />
+          <Property Name="Tipo" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="Id_Anticipo" Type="Int32" />
+          <Property Name="Id_Concepto" Type="Int32" />
+          <Property Name="montoConc" Type="Int32" />
+          <Property Name="montoAdelanto" Type="Int32" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -762,6 +807,20 @@
                 <ScalarProperty Name="Empleado_Id" ColumnName="Empleado_Id" />
                 <ScalarProperty Name="Liquidacion_Id" ColumnName="Liquidacion_Id" />
                 <ScalarProperty Name="Id_Detalle" ColumnName="Id_Detalle" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="v_Calculo">
+            <EntityTypeMapping TypeName="NominaModel.v_Calculo">
+              <MappingFragment StoreEntitySet="v_Calculo">
+                <ScalarProperty Name="montoAdelanto" ColumnName="montoAdelanto" />
+                <ScalarProperty Name="montoConc" ColumnName="montoConc" />
+                <ScalarProperty Name="Id_Concepto" ColumnName="Id_Concepto" />
+                <ScalarProperty Name="Id_Anticipo" ColumnName="Id_Anticipo" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Salario_Basico" ColumnName="Salario_Basico" />
+                <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+                <ScalarProperty Name="Id_Empleado" ColumnName="Id_Empleado" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

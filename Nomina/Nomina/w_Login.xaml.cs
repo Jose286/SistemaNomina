@@ -48,11 +48,7 @@ namespace Nomina
                     Menu.Owner = this;
                     Menu.Show();
                     this.Hide();
-                    
-                    ProyectoNomina.Properties.Settings.Default.usuarioLogeado = user.Id_Usuario;
-
-                    
-                    
+                   
                 }
                 var UsuarioLogeado = from Logeado in datos.Usuario where Logeado.Usuario1 == txtUsuario.Text select Logeado.Id_Usuario;
 
